@@ -53,7 +53,7 @@
 <body>
 <button class="accordion">How to add a domain?</button>
 <div class="panel">
-  <p>In the main screen, at the bottom right there must be a button with a plus sign (+) inside. Press the button then write the domain name i.e. "google.com" and press "Add".</p>
+  <p>In the main screen, at the bottom right, there must be a button with a plus sign (+) inside. Press the button then write the domain name i.e. "google.com" and press "Add".</p>
 </div>
 
 <button class="accordion">An error occurred while adding a domain</button>
@@ -61,7 +61,6 @@
   <p>There can be so many errors to prevent you to adding a domain.</p>
   <p>If there is no specific error, please check possible errors below:</p>
   <ul>
-    <li>A trouble in your internet connection.</li>
     <li>WHOIS server which is you requested is blocks you due too many requests.</li>
     <li>Your ISP or VPN provider is blocking WHOIS requests.</li>
     <li>Corruptions on WHOIS data. You can notify us about this.</li>
@@ -73,9 +72,9 @@
   <p>Not all domain extensions may supported. Some domain extensions like ".de" doesn't provide expiry date on their own WHOIS data.</p>
 </div>
 
-<button class="accordion">How to hide "Domain Monitor is running.."</button>
+<button class="accordion">How to hide "Monitoring service is active.."</button>
 <div class="panel">
-  <p>For Android 8.0 and above versions are requires sticky notifications to keep background services running for security reasons. The notification system is dependent this background service.</p>
+  <p>For Android 8.0 and above versions are requires sticky notifications to keep background services running for security reasons. The background services are depended to this notification system. You can not hide it until disable the monitoring service.</p>
 </div>
 
 <button class="accordion">What is the background service?</button>
@@ -85,7 +84,12 @@
 
 <button class="accordion">Do you collect my data?</button>
 <div class="panel">
-  <p>Domain Monitor doesn't use any third party services to obtain the domain availability or expiry date information. Requests are sent by directly from your device. But we're using Google Analytics, to analyze the user behaviour. You can reach <a target="_blank" href="https://www.kodigen.com/privacy.html">our privacy policy</a> and <a target="_blank" href="https://policies.google.com/privacy">Google privacy policy</a>.</p>
+  <p>Domain Monitor doesn't use any third party services to obtain the domain availability or expiry date information. WHOIS requests are sent by directly from your device. But we're using Google Analytics, to analyze app crash stats as anonymous. You can reach <a target="_blank" href="https://www.kodigen.com/privacy.html">our privacy policy</a> and <a target="_blank" href="https://policies.google.com/privacy">Google privacy policy</a>.</p>
+</div>
+
+<button class="accordion">Is my ISP blocks WHOIS requests?</button>
+<div class="panel">
+  <p>Some ISP's or VPN providers are may blocking not common ports such as "43" which is port number of WHOIS protocol. We've some feedback from users about that "error occuring while connection to the WHOIS servers". In this case, we can do nothing.</p>
 </div>
 
 <button class="accordion">My question is not answered</button>
