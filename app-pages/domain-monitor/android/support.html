@@ -58,7 +58,7 @@
 <body>
 <button class="accordion">How to add a domain?</button>
 <div class="panel">
-  <p>In the main screen, at the bottom right there must be a button with a plus sign (+) inside. Press the button then write the domain name i.e. "google.com" and press "Add".</p>
+  <p>In the main screen, at the bottom right, there must be a button with a plus sign (+) inside. Press the button then write the domain name i.e. "google.com" and press "Add".</p>
 </div>
 
 <button class="accordion">An error occurred while adding a domain</button>
@@ -66,7 +66,6 @@
   <p>There can be so many errors to prevent you to adding a domain.</p>
   <p>If there is no specific error, please check possible errors below:</p>
   <ul>
-    <li>A trouble in your internet connection.</li>
     <li>WHOIS server which is you requested is blocks you due too many requests.</li>
     <li>Your ISP or VPN provider is blocking WHOIS requests.</li>
     <li>Corruptions on WHOIS data. You can notify us about this.</li>
@@ -78,13 +77,13 @@
   <p>Not all domain extensions may supported. Some domain extensions like ".de" doesn't provide expiry date on their own WHOIS data.</p>
 </div>
 
-<button class="accordion">How to hide "Domain Monitor is running.."</button>
+<button class="accordion">How to hide "Monitoring service is active.."</button>
 <div class="panel">
   <p><strong>For Domain Monitor version >= 0.10</strong></p>
   <p>By default, Domain Monitor doesn't show a sticky notification until you enable "strict monitoring mode". You can disable the strict monitoring anytime from settings.</p>
   <p><br /></p>
   <p><strong>For Domain Monitor version <= 0.9</strong></p>
-  <p>Android 8.0 and above versions are requires sticky notifications to keep background services running for security reasons. The notification system is dependent this background service.</p>
+  <p>Android 8.0 and above versions are requires sticky notifications to keep background services running for security reasons. The background services are depended to this notification system. You can not hide it until disable the monitoring service.</p>
 </div>
 
 <button class="accordion">What is the background service?</button>
@@ -101,17 +100,27 @@
 
 <button class="accordion">Do you collect my data?</button>
 <div class="panel">
-  <p>Domain Monitor doesn't use any third party services to obtain the domain availability or expiry date information. Requests are sent by directly from your device. But we're using Google Analytics, to analyze the user behaviour. You can reach <a target="_blank" href="https://www.kodigen.com/privacy.html">our privacy policy</a> and <a target="_blank" href="https://policies.google.com/privacy">Google privacy policy</a>.</p>
+  <p>Domain Monitor doesn't use any third party services to obtain the domain availability or expiry date information. WHOIS requests are sent by directly from your device. But we're using Google Analytics, to analyze app crash stats as anonymous. You can reach <a target="_blank" href="https://www.kodigen.com/privacy.html">our privacy policy</a> and <a target="_blank" href="https://policies.google.com/privacy">Google privacy policy</a>.</p>
+</div>
+
+<button class="accordion">Is my ISP blocks WHOIS requests?</button>
+<div class="panel">
+  <p>Some ISP or VPN providers are may block the not common ports such as "43" which is port number of WHOIS protocol. We've some feedback from users about that "error occuring while connection to the WHOIS servers". In this case, we can do nothing.</p>
+</div>
+
+<button class="accordion">Why I see ads? I don't want to see it</button>
+<div class="panel">
+  <p>Sorry about that. It may be disturbing for you. But, next time I'll offer you for ad-free version.</p>
 </div>
 
 <button class="accordion">My question is not answered</button>
 <div class="panel">
-  <p>You can reach us by <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQ5iq11f8jlQHT3C02mRdVa0iqmrLF4IqbNUdqKY_yvjD_HQ/viewform?embedded=true">filling this form</a> or send e-mail <a href="mailto:info@kodigen.com">info@kodigen.com</a></p>
+  <p>You can reach us by our e-mail <a href="mailto:info@kodigen.com">info@kodigen.com</a></p>
 </div>
 
 <button class="accordion">I want to send feedback or suggestion</button>
 <div class="panel">
-  <p>You can reach us by <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQ5iq11f8jlQHT3C02mRdVa0iqmrLF4IqbNUdqKY_yvjD_HQ/viewform?embedded=true">filling this form</a> or send e-mail <a href="mailto:info@kodigen.com">info@kodigen.com</a></p>
+  <p>You can reach us by our e-mail <a href="mailto:info@kodigen.com">info@kodigen.com</a></p>
 </div>
 
 <script>
