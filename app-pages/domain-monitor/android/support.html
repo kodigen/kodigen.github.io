@@ -23,6 +23,11 @@
     font-weight: normal;
   }
 
+  p {
+    margin: 10px 0;
+    font-size: 100%;
+  }
+
   .accordion {
     background-color: #eee;
     color: #444;
@@ -32,7 +37,7 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 100%;
     transition: 0.4s;
     border-bottom: 1px solid #ccc;
   }
@@ -75,12 +80,23 @@
 
 <button class="accordion">How to hide "Domain Monitor is running.."</button>
 <div class="panel">
-  <p>For Android 8.0 and above versions are requires sticky notifications to keep background services running for security reasons. The notification system is dependent this background service.</p>
+  <p><strong>For Domain Monitor version >= 0.10</strong></p>
+  <p>By default, Domain Monitor doesn't show a sticky notification until you enable "strict monitoring mode". You can disable the strict monitoring anytime from settings.</p>
+  <p><br /></p>
+  <p><strong>For Domain Monitor version <= 0.9</strong></p>
+  <p>Android 8.0 and above versions are requires sticky notifications to keep background services running for security reasons. The notification system is dependent this background service.</p>
 </div>
 
 <button class="accordion">What is the background service?</button>
 <div class="panel">
   <p>Domain Monitor has a background service to monitor the changes on the domain, naturally. The domains you've added will be scanned in order. The monitoring service will continue running in the background as long as you keep it enabled. You can disable it anytime from settings if you don't want to be notified.</p>
+</div>
+
+<button class="accordion">What is the strict monitoring?</button>
+<div class="panel">
+  <p><strong>For Domain Monitor version >= 0.10</strong></p>
+  <p>Strict monitoring can be enabled from settings. If it's enabled there will be a sticky notification that requiring by the Android system to monitor in consistent. If you are a domain catcher, it is recommended.</p>
+  <p>Without strict monitoring, you can monitor domains regularly but without consistent interval. It's enabled by default and no sticky notification will shown.</p>
 </div>
 
 <button class="accordion">Do you collect my data?</button>
